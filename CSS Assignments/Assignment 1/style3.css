@@ -1,0 +1,41 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #cbc8e3; /* Matches the purple background */
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.card {
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 400px;
+position: relative;
+text-align: justify;
+}
+
+.badge {
+background-color: #ffcc0090;
+color: black;
+font-weight: bold;
+padding: 5px 10px;
+border-radius: 5px;
+position: absolute;
+top: 10px;
+left: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+margin: -5px -20px -15px -15px;
+}
+
+.product-image {
+width: 100%;
+height: auto;
+}
+
+.card-content {
+padding: 20px;
+}
+

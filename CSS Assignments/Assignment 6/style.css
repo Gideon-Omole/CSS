@@ -1,0 +1,269 @@
+/* header */
+
+/* Auto layout */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Distribute items within the header */
+    gap: 140px; /* Keeps spacing as needed */
+    width: 100%; /* Makes it responsive */
+    max-width: 1150px; /* Controls the max width */
+    margin: 12px auto; /* Automatically center header */
+    padding: 0 16px; /* Adds some padding on the sides */
+}
+
+
+.logo {
+    /* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px;
+gap: 8px;
+
+width: 155px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.frame-1 ul{
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 504px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.frame-2 ul{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 24px;
+width: 211px;
+height: 44px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+}
+
+.frame-2 button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 100px;
+    background: #0065FE;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.frame1650 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between elements */
+    width: 948px; /* Match layout */
+    height: 389px;
+    margin: 162px auto; /* Centers the section */
+    text-align: center; /* Ensures all text is centered */
+    color: #0D0D0D; /* Dark text */
+}
+
+.frame1647 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-width: 948px;
+}
+
+.frame1647 .Group-1 {
+    width: 948px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame1647 .Group-1 p {
+    font-family: 'Gilroy-Bold', sans-serif; /* Apply the Gilroy-Bold font */
+    font-size: 36px;
+    font-weight: 700;
+    color: #0D0D0D; /* Dark text */
+    line-height: 1.2;
+}
+
+.frame1647 .Group-1 span {
+    font-weight: 700; /* Bold for emphasis */
+    color: #0065FE; /* Blue color for "URL Shortening" */
+}
+
+.frame1647 .Group-1 img {
+    width: 120px; /* Adjust size based on layout */
+    margin-top: -10px; /* Positioning */
+}
+
+.frame1647 p {
+    font-family: 'Gilroy-Medium', sans-serif; 
+    max-width: 720px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.frame1648 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.frame1648 button {
+    background: #0065FE;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.frame1648 p {
+    color: #0065FE;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/fonts/Gilroy-Bold.woff2') format('woff2'),
+         url('/fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* URL-frame centering and style */
+.URL-frame {
+    width: 833px;
+    height: 336.57px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(240, 245, 255, 1) 100%);
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Frame1716 - Chain layout */
+.frame1716 {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Frame7 - Group of link2 items */
+.frame7 {
+    display: flex;
+    align-items: center;
+    gap: 0px; /* Make sure the chains are touching */
+}
+
+/* Link2 class for individual chain elements */
+.link2 {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ( ) vector */
+.link2 img:first-child {
+    position: absolute;
+    width: 100%;
+    height: auto;
+ 
+}
+
+/* - vector inside ( ) */
+.link2 img:last-child {
+    position: absolute;
+    width: 60%;
+    height: auto;
+
+}
+
+/* Line7 is not needed since the chains are now closer together */
+.line7 {
+    display: none;
+}
+
+/* Arrow between the chain and the final ( ) */
+.arrow {
+    color: #005ae2;
+    font-size: 24px;
+}
+
+/* Text styling under the chain */
+.frame29546 p {
+    width: 648px;
+    height: 48px;
+    margin: 0;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(20, 20, 20, 1);
+}
+
+.frame29546 strong {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.frame29546 span {
+    color: #005ae2;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
