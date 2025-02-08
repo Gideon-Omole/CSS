@@ -1,126 +1,170 @@
-.header-section {
-    width: 1280px;
-    height: 382px;
-    gap: 0px;
-    border: 0px 0px 8px 0px;
-    opacity: 0px;
-    border-bottom: 8px solid rgba(153, 153, 153, 1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd; /* border for separation */
-    margin: 20px 100px 100px 100px;
 
-    
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
 }
+
 
 .header-content {
-
-    max-width: 60%;
-    margin: 100px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 8px solid #999999;
+    text-align: left;
 }
 
-p > span {
 
-    color: green;
-   
-        font-weight: bold; /
-
-    
-}
-
-.main {
-
+body {
+    background-color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+p > span {
+    color: green;
+    font-weight: bold;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 20px;
     background-color: grey;
-
 }
+
 
 .card {
-
-    width: 800px;
-height: 312px;
-top: 454px;
-left: 240px;
-gap: 0px;
-border: 0px 0px 0px 0px;
-opacity: 0px;
-background-color: #fff;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-margin: 100px 100px 100px 100px;
-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.594)
-    
-
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 8px solid #999999;
+    margin: 20px 0;
+    text-align: left;
 }
 
-.heading {
 
-    width: 334px;
-height: 29px;
-top: 478px;
-left: 264px;
-gap: 0px;
-opacity: 0px;
-
-}
-
+/* Banner styles */
 .banner {
-    margin: -10px;
-    width: 398px;
-    height: 60px;
-    top: 462px;
-    left: 232px;
-    gap: 0px;
-    border: 0px 0px 8px 0px;
-    opacity: 0px;
+    margin-top: 5px;
+    margin-left: -27px;
+    width: 50%;
+    height: 20%;
+    padding: 10px;
     background: rgba(255, 191, 0, 1);
-    border-bottom: 8px solid rgba(204, 153, 0, 1)
-    
-
-
+    border-bottom: 8px solid rgba(204, 153, 0, 1);
+    text-align: center;
 }
 
 
+
+/* Specific heading styles */
 h2 {
-    width: 334px;
-    height: 29px;
-    top: 478px;
-    left: 264px;
-    gap: 0px;
-    opacity: 0px;
     font-family: Lato;
-font-size: 24px;
-font-weight: 800;
-line-height: 28.8px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-    
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* Responsive styles for mobile view */
+@media only screen and (max-width: 390px) {
+    body {
+        height: 844px; /* Adjust height for mobile */
+        width: 390px; /* Adjust width for mobile */
+        position: relative;
+        top: -513px; /* Positioning for mobile */
+        left: 957px; /* Positioning for mobile */
+    }
+
+    .content {
+        height: auto; /* Adjust height for smaller screens */
+        width: 100%; /* Adjust width to fit the viewport */
+    }
+
+    .header-content {
+        padding: 10px; /* Decrease padding for mobile view */
+    }
+
+    .card {
+        width: 100%; /* Increase card width to full for mobile view */
+        padding: 10px; /* Decrease padding for mobile view */
+    }
+
+    .banner {
+        width: 100%; /* Adjust banner width to full for mobile view */
+        margin-left: 0; /* Remove negative margin for mobile view */
+    }
+
+    .main {
+        width: 100%; /* Adjust main section width to full for mobile view */
+        padding: 10px; /* Decrease padding for mobile view */
+    }
+
+    h2 {
+        font-size: 18px; /* Decrease heading font size for mobile view */
+    }
+
 
 }
 
-div > p {
 
-   margin-left: 10px;
-     width: 752px;
-     height: 120px;
-     top: 546px;
-     left: 264px;
-     gap: 0px;
-     opacity: 0px;
-     font-family: Lato;
- font-size: 20px;
- font-weight: 500;
- line-height: 30px;
- text-align: left;
- text-underline-position: from-font;
- text-decoration-skip-ink: none;
- 
-     
- 
- }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        height: 1024px; /* Adjust height for tablet */
+        width: 768px; /* Adjust width for tablet */
+        position: relative;
+        top: -513px; /* Positioning for tablet */
+        left: 957px; /* Positioning for tablet */
+    }
+
+    .content {
+        height: auto; /* Adjust height for smaller screens */
+        width: 100%; /* Adjust width to fit the viewport */
+    }
+
+    .header-content {
+        padding: 15px; /* Adjust padding for tablet view */
+    }
+
+    .card {
+        width: 85%; /* Adjust card width for tablet view */
+        padding: 15px; /* Adjust padding for tablet view */
+    }
+
+    .banner {
+        width: 75%; /* Adjust banner width for tablet view */
+        margin-left: 0; /* Adjust margin for tablet view */
+    }
+
+    .main {
+        width: 100%; /* Adjust main section width for tablet view */
+        padding: 15px; /* Adjust padding for tablet view */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust heading font size for tablet view */
+    }
+}
+
+
 
